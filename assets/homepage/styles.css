@@ -1,0 +1,141 @@
+body{ 
+    background-color: black; 
+    margin: 0;
+    font-weight: 400;  
+    font-family: Inter;  
+  
+} 
+        /*------Navbar-------*/
+.container_nav{ 
+    width: 90%; 
+    margin: 0 auto;
+} 
+header{   
+    background: #9b6e2c; 
+}  
+
+header::after{ 
+    content: ''; 
+    display: table; 
+    clear: both;
+}
+           /*------website Name-------*/
+.title{  
+    float: left; 
+    text-transform: capitalize; 
+    font-size: 50px; 
+} 
+        /*-----Other pages------*/
+nav{ 
+    float: right;
+} 
+
+nav ul{ 
+    margin: 0; 
+    padding: 0;  
+    list-style: none;
+} 
+
+nav li{ 
+    display: inline-block; 
+    padding: 20 px; 
+    padding-top: 9%; 
+    position: relative; 
+    margin-left:60px   
+    
+} 
+
+nav a { 
+    color: black; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-size: 25px; 
+    font-weight: bold;
+} 
+
+nav:hover{ 
+    color: #6c4d1f;
+} 
+
+nav a::before{ 
+    content: ''; 
+    display: block; 
+    height: 10px; 
+    width: 0%; 
+    background-color: #6c4d1f; 
+    position: absolute; 
+    top: 50%; 
+    transition: all ease-in-out 250ms;
+} 
+
+nav a:hover::before{ 
+    width: 100%;
+}
+       /*---text intro/ scroll images------*/
+.hero_container{  
+    padding: 40px;  
+    padding-top: 0%;  
+    display: flex;  
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction: row;  
+}  
+  /*--- just the text---*/
+.text_container{ 
+    float: right; 
+    border: 4px solid #dabd92 ;  
+    box-shadow: 10px 20px #c9af88; 
+    padding: 10px 15px;  
+    margin: 10%;  
+    
+}
+
+.sub_title{ 
+    font-size: 50px; 
+    color: #6c4d1f; 
+    
+}  
+
+.paragraph_intro{ 
+ 
+   font-size: 25px; 
+   color: #9b6e2c;
+}  
+
+  /*--- just the scroll images---*/
+.scroll_container{ 
+    background-color: #030303;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px; 
+    float: left ; 
+    position: relative;  
+    top: 150%;
+} 
+ 
+div.scroll-container img {
+    padding-top: 10px; 
+    padding-bottom: 10px;
+  }
+
+          /*------Footer------*/
+.footer{  
+    padding: 20px;
+    text-align: center;  
+    color: black; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 150px;
+    background-color:#6c4d1f;  
+} 
+i{ 
+    font-size: 50px; 
+    padding: 10px; 
+   
+}
+
+
+
+

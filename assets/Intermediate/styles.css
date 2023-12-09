@@ -1,0 +1,151 @@
+body{  
+    margin:0; 
+    padding: 0;  
+    background-color: black; 
+    font-family: Inter;  
+} 
+ 
+
+    /*------Navbar-------*/
+    .container_nav{ 
+    width: 90%; 
+    margin: 0 auto;
+} 
+header{   
+    background: #9b6e2c; 
+}  
+
+header::after{ 
+    content: ''; 
+    display: table; 
+    clear: both;
+}
+            /*------website Name-------*/
+.title{  
+    float: left; 
+    text-transform: capitalize; 
+    font-size: 50px;  
+    padding: 20px;
+    color: black;
+} 
+        /*-----Other pages------*/
+nav{ 
+    float: right;
+} 
+
+nav ul{ 
+    margin: 0; 
+    padding: 0;  
+    list-style: none;
+} 
+
+nav li{ 
+    display: inline-block; 
+    padding:  20px; 
+    padding-top: 5%; 
+    position: relative; 
+    margin-left:60px   
+    
+} 
+
+nav a { 
+    color: black; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-size: 25px; 
+    font-weight: bold;
+} 
+
+nav:hover{ 
+    color: #6c4d1f;
+} 
+
+nav a::before{ 
+    content: ''; 
+    display: block; 
+    height: 10px; 
+    width: 0%; 
+    background-color: #6c4d1f; 
+    position: absolute; 
+    top: 50%; 
+    transition: all ease-in-out 250ms;
+} 
+
+nav a:hover::before{ 
+    width: 100%;
+}
+
+/*--- page title*/
+
+.page_title{ 
+    font-family: Inter;  
+    font-size: 100px;  
+    color: #6c4d1f; 
+    text-align: center; 
+}   
+
+/*---display and font-size of all the recipes in the page*/
+
+.hero_container{ 
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5%;  
+    margin-bottom: 10% ; 
+    justify-content: center;
+} 
+
+h1, h2, p, li{ 
+    color: #9B6E2C; 
+}  
+h1{ 
+    font-size: 50px;
+} 
+h2{ 
+    font-size:45px
+} 
+p, li{ 
+    font-size: 40px;
+} 
+
+/*--- all container have same characteristics*/
+ 
+.starter_dish_container,.meat_container,.fish_container,.vegetarian_container,.soups_container,.salads_container,.dessert_container{ 
+    max-width: 1000px;
+    border: 4px solid #9B6E2C;
+    display: flex;  
+    margin: 10px 15px;
+    flex-direction:row-reverse;    
+    padding: 10px 15px;  
+    
+} 
+
+.image_starter,.image_meat, .image_fish,.image_vegetarian,.image_soups,.image_salads,.image_dessert{ 
+    border-radius: 50%; 
+    width: 100%; 
+    max-width: 400px;      
+} 
+
+.starter_dish_paragraph,.meat_paragraph,.fish_paragraph,.vegetarian_paragraph,.soups_paragraph,.salads_paragraph,.dessert_paragraph{ 
+    float: left;  
+    align-items: center;   
+}
+
+/*--- footer ---*/
+
+.footer{  
+    padding: 20px;
+    text-align: center;  
+    color: black; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 150px;
+    background-color:#6c4d1f; 
+} 
+i{ 
+    font-size: 50px; 
+    padding: 10px; 
+   
+}
